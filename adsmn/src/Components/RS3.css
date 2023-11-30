@@ -1,0 +1,10 @@
+@media screen and (max-width: 376px){
+    .purpletonemusic{
+        width: 250px !important;
+    }
+  
+}
+@media screen and (min-width: 769px) {
+    .moodContainer {
+      width: 25%;
+    }}

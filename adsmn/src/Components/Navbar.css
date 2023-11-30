@@ -1,0 +1,135 @@
+.NavDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #320071;
+  box-shadow: 0 4px 0px -1px #320071; 
+  max-width: 100%;
+}
+
+.NavDiv .img1 {
+  width: 5rem; 
+}
+
+.NavDiv .img3 {
+  width: 1.875rem;
+  margin-right: 1.6rem;
+}
+
+.NavDiv .img2 {
+  width: 10rem;
+}
+
+.NavDiv .img1 {
+  margin-bottom: 1.875rem; 
+  margin-left: 0.625rem; 
+}
+
+.container {
+  position: relative;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  align-self: flex-end; 
+  transition: transform 0.3s ease;
+}
+
+.menu {
+  position: absolute;
+  top: -1.8rem; 
+  right: 0;
+  width: 16.25rem; 
+  height: 100vh;
+  background-image: url('../Images/Hamburger\ Menu.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  z-index: 5;
+  flex-direction: column;
+  background-position: center;
+  align-items: flex-start;
+  padding: 1.25rem; 
+  box-sizing: border-box;
+  color: white;
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: fadeInDown 2s ease forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-icon {
+  align-self: flex-end;
+  cursor: pointer;
+  width: 1.875rem; 
+  margin-top: 1.25rem; 
+  margin-right: 1.25rem; 
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4; 
+  backdrop-filter: blur(2px);
+}
+
+.link {
+  margin-top: 3.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.link1{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.link1:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+@media screen and (max-width: 376px) {
+  .menu{
+    min-height: unset;
+    height: 100vh;
+  }
+  .link1{
+    margin-top: 7rem !important;
+  }
+  .link{
+    margin-top: 3rem !important;
+  }
+}
+@media screen and (min-width:769px){
+  .menu{
+    min-height: 100vh;
+  }
+  .link1{
+    margin-top: 9rem !important;
+  }
+  .link {
+    margin-top: 3.6rem;
+}
+}
+
+

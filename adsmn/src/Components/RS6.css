@@ -1,0 +1,12 @@
+.landing-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; 
+  }
+  
+  .landing-page-image1 {
+    max-height: 100vh; 
+    margin-top: 6px;
+  }

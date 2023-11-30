@@ -1,0 +1,25 @@
+/* .landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  } */
+  
+  /* .landing-page-image {
+    width: 100%; 
+    max-height: 100vh;
+    object-fit: cover;
+  } */
+  .landing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; 
+  }
+  
+  .landing-page-image {
+    max-height: 100vh; 
+  }
+ 
+  
